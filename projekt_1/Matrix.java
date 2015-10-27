@@ -43,10 +43,7 @@ public class Matrix
     {
         if((int)Math.pow((double)degree, 2.0) == values.length)
         {
-            Matrix newMatrix = new Matrix(values, degree);
-            System.out.println("Utworzono macierz!");
-            newMatrix.displayMatrix();
-            return newMatrix;
+            return new Matrix(values, degree);
         }
         else
         {
