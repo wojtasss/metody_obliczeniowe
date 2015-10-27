@@ -35,6 +35,7 @@ public class Matrix
             {
                 System.out.print(this.matrix[i][j] + " ");
             }
+            
             System.out.println();
         }
     }
