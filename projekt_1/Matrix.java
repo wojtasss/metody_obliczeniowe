@@ -14,13 +14,7 @@ public class Matrix
         this.isSquare = true;
         this.matrix = fillMatrix(values, degree);
     }
-    public Matrix(int values[], int rows, int cols)
-    {
-    	this.rows = rows;
-    	this.cols = cols;
-    	this.isSquare = false;
-    	this.matrix = fillMatrix(values, rows, cols);
-    }
+    
     public Matrix(Matrix matrix)
     {
     	this.degree = matrix.getDegree();
@@ -71,22 +65,7 @@ public class Matrix
         
         return newMatrix;
     }
-    
-    private int[][] fillMatrix(int values[], int rows, int cols)
-    {
-    	int newMatrix[][] = new int[rows][cols];
-    	
-    	for(int i=0; i<rows; i++)
-    	{
-    		for(int j=0; j<cols; j++)
-    		{
-    			newMatrix[i][j] = values[i*rows+j];
-    		}
-    	}
-    	
-    	return newMatrix;
-    }
-    
+
     public void displayMatrix()
     {
         for(int i=0; i<this.rows; i++)
