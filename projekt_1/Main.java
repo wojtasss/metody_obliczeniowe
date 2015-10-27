@@ -63,7 +63,7 @@ public class Main
     		System.out.print("("+ xValues[i] + ", " + yValues[i] +") ");
     	}
     	 
-    	System.out.print("\n\nW(x) = ");
+    	System.out.print("\n\nto W(x) = ");
     	
     	for(int i=factorValues.length-1; i>=0; i--)
     	{
