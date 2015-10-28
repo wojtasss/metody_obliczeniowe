@@ -92,6 +92,7 @@ public class Main
     			else if(i == factorValues.length-1)
     			{
     				System.out.print(factorValues[i] + "*x");
+    				//System.out.print(((factorValues[i] == 1.0)?"":Math.abs(factorValues[i]) + "*") + "x");
     			}
     			else
     			{
@@ -108,6 +109,7 @@ public class Main
     				}
     				
     				System.out.print(Math.abs(factorValues[i]));
+    				//System.out.print(((factorValues[i] == 1.0)?"":Math.abs(factorValues[i]) + "*") + "x");
     			}
     			
     			isStarted = true;
